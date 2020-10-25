@@ -1,0 +1,217 @@
+.buttons {
+
+    &__group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: baseline;
+        margin-top: rem-calc(40px);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding-right: rem-calc(56px);
+        margin-bottom: $margin-lgx2;
+
+        @include sm {
+            padding-right: rem-calc(64px);
+        }
+
+        &-float {
+            padding-right: rem-calc(40px);
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: $margin-xl;
+    }
+}
+
+.btn {
+    border: 2px solid $primary-color-dark-2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    align-self: flex-start;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s;
+    min-width: rem-calc(90px);
+    background-color: $body-base-color;
+    color: $primary-color-dark-2;
+    letter-spacing: 1px;
+    padding: $btn-md-wrap;
+    @include font-size($font-size-button-md...);
+
+    @include sm {
+        min-width: rem-calc(180px);
+        padding: $btn-lg-wrap;
+        @include font-size($font-size-button-lg...);
+    }
+
+    &:hover {
+        transform: translateY(-2px) translateX(-2px);
+    }
+
+    &:active,
+    &:focus {
+        transform: translateY(-1px);
+    }
+
+    &--lg {
+        padding: $btn-icon20-wrap;
+
+        @include sm {
+           padding: $btn-icon24-wrap;
+        }
+    }
+
+    &--md {
+        min-width: rem-calc(64px);
+        letter-spacing: 1;
+        @include font-size($font-size-button-sm...);
+
+        @include sm {
+            min-width: rem-calc(80px);
+            letter-spacing: 1;
+            padding: $btn-md-wrap;
+            @include font-size($font-size-button-md...);
+        }
+    }
+
+    &--float {
+        border-radius: rem-calc(12px);
+        background-color: $primary-color-dark-1;
+        min-width: auto;
+        border: transparent;
+
+        &-md {
+            padding: $btn-float-md-wrap;
+
+            &:not(:first-child) {
+                margin-top: $margin-xl;
+            }
+        }
+
+        &-sm {
+            border-radius: rem-calc(8px);
+            padding: $btn-float-sm-wrap;
+        }
+    }
+
+    &--clear {
+        border: transparent;
+        padding: 0;
+        min-width: auto;
+        color: $text-base-color;
+        @include font-size($font-size-button-md...);
+    }
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: $primary-color-light-3;
+    background-color: $primary-color-light-5;
+    border-color: #EFF2F7;
+
+    &--empty {
+        background-color: $body-base-color;
+        color: $primary-color-light-5;
+    }
+}
+
+.active {
+    border-color: $text-base-color;
+}
+
+
+// Header navigation buttons
+.btn-nav {
+    border: 2px solid $primary-color;
+    border-radius: rem-calc(12px);
+
+    &__holder {
+        display: inline-block;
+        padding: $btn-float-md-wrap;
+    }
+
+    &--open {
+
+        @include md {
+            display: none;
+        }
+    }
+
+    &--close {
+        margin: 0 $margin-xl;
+    }
+}
+
+
+// Filled buttons
+.btn-darker {
+    background-color: $primary-color-dark-1;
+    color: $body-base-color;
+    border-color: transparent;
+}
+
+.btn-dark {
+    background-color: $primary-color-dark-2;
+    color: $body-base-color;
+}
+
+.btn-light {
+    background-color: $primary-color-light-4;
+}
+
+
+.radio-btn, .toggle-btn {
+    margin-top: $margin-md;
+}
+
+
+// Back to top button
+#button {
+    display: inline-block;
+    background-color: $primary-color;
+    width: rem-calc(32px);
+    height: rem-calc(32px);
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: rem-calc(12px);
+    right: rem-calc(12px);
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $text-base-color;
+    }
+
+    &:active {
+        background-color: $primary-color-dark-2;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @include md {
+        width: rem-calc(48px);
+        height: rem-calc(48px);
+
+        bottom: rem-calc(60px);
+        right: rem-calc(60px);
+    }
+}

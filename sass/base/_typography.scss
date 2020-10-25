@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src:  url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/BebasNeue-Regular.woff') format('woff'), 
+        url('../fonts/BebasNeue-Regular.ttf')  format('truetype'), 
+        url('../fonts/BebasNeue-Regular.svg#Plantin') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src:  url('../fonts/BebasNeue-Bold.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/BebasNeue-Bold.woff') format('woff'), 
+        url('../fonts/BebasNeue-Bold.ttf')  format('truetype'), 
+        url('../fonts/BebasNeue-Bold.svg#Plantin') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src:  url('../fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/Avenir-Roman.woff') format('woff'), 
+        url('../fonts/Avenir-Roman.ttf')  format('truetype'), 
+        url('../fonts/Avenir-Roman.svg#Plantin') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src:  url('../fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/Avenir-Medium.woff') format('woff'), 
+        url('../fonts/Avenir-Medium.ttf')  format('truetype'), 
+        url('../fonts/Avenir-Medium.svg#Plantin') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src:  url('../fonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/Avenir-Heavy.otf')  format('opentype'),
+        url('../fonts/Avenir-Heavy.woff') format('woff'), 
+        url('../fonts/Avenir-Heavy.ttf')  format('truetype'), 
+        url('../fonts/Avenir-Heavy.svg#Plantin') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon/icomoon.eot?ebuskg');
+    src:  url('../fonts/icomoon/icomoon.eot?ebuskg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon/icomoon.ttf?ebuskg') format('truetype'),
+      url('../fonts/icomoon/icomoon.woff?ebuskg') format('woff'),
+      url('../fonts/icomoon/icomoon.svg?ebuskg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+p {
+    font-family: $font-secondary;
+    line-height: rem-calc(22px);
+    font-size: $font-size-base;
+    color: $primary-color-light-2;
+
+    @include md {
+        line-height: rem-calc(32px);
+    }
+}
+
+p + p {
+    margin-top: $margin-sm;
+}
+
+a + a {
+    margin-top: $margin-lgx2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-base;
+    color: $text-base-color;
+    letter-spacing: rem-calc(1.2px);
+}
+
+
+// Font class for different size - paragraphs in body content example
+.body-text {
+    color: $text-base-color;
+
+    &--big {
+        @include font-size($font-size-body-1...);
+        max-width: rem-calc(706px);
+    }
+
+    &--small {
+        @include font-size($font-size-body-2...);
+        max-width: rem-calc(756px);
+    }
+}
+
+// Font class for caption paragraph text
+.caption {
+    @include font-size($font-size-caption...);
+
+    &--tiny {
+        @include font-size($font-size-tiny-caption...);
+    }
+}
+
+.caption-secondary {
+    color: $primary-color-light-1;
+    text-transform: uppercase;
+    text-align: center;
+    @include font-size($font-text-caption...);
+
+    &--md {
+        margin-top: $margin-lgx2;
+        @include font-size($font-caption-secondary...);
+    }
+
+    &--sm {
+        margin-top: $margin-xl;
+        @include font-size($font-caption-sm...);
+    }
+}
+
+.caption-aside {
+    position: absolute;
+    left: -45px;
+    top: -8px;
+}
+
+// Label styles for input caption
+
+label {
+    font-family: $font-base;
+    color: $primary-color-light-1;
+    text-transform: uppercase;
+    @include font-size($font-label...);
+}
+
+label.disabled {
+    color: $primary-color-light-3;
+}
+
+input, textarea, select {
+    margin-top: $margin-sm;
+}
+
+.near-text {
+    font-family: $font-secondary;
+    text-transform: capitalize;
+    @include font-size($font-near-text...);
+}
+
+// Font classes for heading h1>h5: font-family, font-size, line-heigt, font-weight
+h1,
+.heading-1 {
+    @include font-size($heading-1...);
+    @include md {
+        @include font-size($heading-desktop-1...)
+    }
+}
+
+.heading-1-alternative {
+    font-family: $font-secondary;
+    @include font-size($heading-1-alternative...);
+    @include md {
+        @include font-size($heading-desktop-1-alternative...)
+    }
+}
+
+h2,
+.heading-2 {
+    @include font-size($heading-2...);
+    @include md {
+        @include font-size($heading-desktop-2...)
+    }
+}
+
+.heading-2-alternative {
+    font-family: $font-secondary;
+    @include font-size($heading-2-alternative...);
+    @include md {
+        @include font-size($heading-desktop-2-alternative...)
+    }
+}
+
+h3,
+.heading-3 {
+    @include font-size($heading-3...);
+    @include md {
+        @include font-size($heading-desktop-3...)
+    }
+}
+
+.heading-3-alternative {
+    font-family: $font-secondary;
+    @include font-size($heading-3-alternative...);
+    @include md {
+        @include font-size($heading-desktop-3-alternative...)
+    }
+}
+
+h4,
+.heading-4 {
+    @include font-size($heading-4...);
+    @include md {
+        @include font-size($heading-desktop-4...)
+    }
+}
+
+.heading-4-alternative {
+    font-family: $font-secondary;
+    @include font-size($heading-4-alternative...);
+    @include md {
+        @include font-size($heading-desktop-4-alternative...)
+    }
+}
+
+h5,
+.heading-5 {
+    @include font-size($heading-5...);
+    @include md {
+        @include font-size($heading-desktop-5...)
+    }
+}
+
+.heading-5-alternative {
+    font-family: $font-secondary;
+    @include font-size($heading-5-alternative...);
+    @include md {
+        @include font-size($heading-desktop-5-alternative...)
+    }
+}
+
+h6,
+.heading-6 {
+    font-family: $font-secondary;
+    font-weight: $font-weight-bold;
+    color: $primary-color-light-2;
+    text-transform: uppercase;
+    @include font-size($heading-6...);
+}
+
+[class*=alternative] {
+    text-transform: capitalize;
+}

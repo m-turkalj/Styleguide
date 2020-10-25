@@ -1,0 +1,87 @@
+.range-field {
+    position: relative;
+    width: 100%;
+    margin-bottom: $margin-xl;
+}
+.range-number {
+    position: absolute;
+    color: $text-base-color;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    padding-left: 4px;
+    top: rem-calc(21px);
+}
+
+.fixed-number {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -9px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 2px;
+    position: absolute;
+    background: $primary-color-light-3;
+    outline: none;
+    width: 88%;
+    margin: 10px 8px;
+}
+
+.slider input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 25%;
+    top: 15px;
+    width: 50%;
+    outline: none;
+    height: rem-calc(18px);
+    margin: 0;
+    padding: 0;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: rem-calc(16px);
+    height: rem-calc(16px);
+    border-radius: 8px;
+    background: $text-base-color;
+    cursor: pointer;
+
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+.slider::-moz-range-thumb {
+    width: rem-calc(16px);
+    height: rem-calc(16px);
+    border-radius: 8px;
+    background: $text-base-color;
+    cursor: pointer;
+
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+}
+
+.slider input::-moz-range-track {
+    position: relative;
+    z-index: -10;
+    border: 0;
+}
+.slider input:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+
+}
+.slider input[type=range]::-moz-focus-outer {
+    border: 0;
+}

@@ -1,0 +1,67 @@
+.dropdown {
+    position: relative;
+
+    &:active {
+        transform: translateY(1px);
+    }
+
+    &:hover,
+    &:focus {
+        border-color: $primary-color-dark-2;
+    }
+
+    &__list {
+        border: 1px solid $primary-color-light-3;
+        border-radius: 5px;
+    }
+
+    &__item {
+        display: block;
+        font-family: $font-secondary;
+        padding: $dropdown-wrap;
+        transition: background-color .1s linear, color .1s linear;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+        cursor: pointer;
+        @include font-size($font-size-form...);
+
+        &:hover {
+          background-color: $primary-color-light-5;
+        } 
+    }
+
+    &__item input {
+        margin-top: rem-calc(4px);
+    }
+
+    &__arrow {
+        position: absolute;
+        top: rem-calc(24px);
+        right: rem-calc(5px);
+        padding-right: rem-calc(8px); // Padding instead margin is becouse covering default arrow
+        background-color: white;
+    }
+
+    &__select {
+        width: 100%;
+        border: 1px solid $primary-color-light-3;
+        border-radius: rem-calc(5px);
+        cursor: pointer;
+        padding: $dropdown-select-wrap;
+    }
+}
+
+.overSelect {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom: 0;
+    cursor: pointer;
+}
+
+#checkboxes {
+    display: none;
+}

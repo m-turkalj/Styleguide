@@ -1,0 +1,75 @@
+// COLORS CLASS
+.color-primary {
+    color: $primary-color;
+}
+
+.color-light {
+    color: $primary-color-light-1;
+}
+
+.color-dark {
+    color: $primary-color-dark-2;
+}
+
+.color-white {
+    color: $body-base-color;
+}
+
+.color-text {
+    color: $text-base-color;
+}
+
+
+// FONT WEIGHT CLASS 
+.weight-regular {
+    font-weight: $font-weight-normal;
+}
+
+.weight-medium {
+    font-weight: $font-weight-medium;
+}
+
+.weight-bold {
+    font-weight: $font-weight-bold;
+}
+
+
+// TEXT TRANSFORM CLASS 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+// MARGIN TOP GUTTER SPACE 
+
+.mar-t-sm {
+   margin-top: $margin-sm; 
+}
+
+.mar-t-md {
+    margin-top: $margin-md; 
+}
+
+.mar-t-lg {
+    margin-top: $margin-lg; 
+}
+
+.mar-t-xl {
+    margin-top: $margin-xl; 
+}
+
+.mar-t-lgx2 {
+    margin-top: $margin-lgx2; 
+}
+
+.mar-t-40 {
+    margin-top: rem-calc(40px);
+}
+
+.mar-t-100 {
+    margin-top: rem-calc(100px);
+}

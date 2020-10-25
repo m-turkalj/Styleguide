@@ -1,0 +1,12 @@
+// -----------CIRCLE COLOR LOOPS--------------------------------------
+
+@each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    .circle-#{$i} { 
+        background-color: $current-color;
+        width: $circle-size;
+        height: $circle-size;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+}

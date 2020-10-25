@@ -1,0 +1,98 @@
+.tooltip {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__content {
+    margin-right: $margin-xl;
+  }
+}
+
+.tooltip-toggle {
+
+  cursor: pointer;
+  pointer-events: none;
+  position: relative;
+  // I added width & height becouse 'span' doesn't have width or height
+  display: inline-block;
+  width: 180px;
+  height: 90px;
+  
+  &--top {
+    &::after {
+      position: absolute;
+      top: -8px;
+      left: 90px;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 8px solid #1F2D3D;
+      content: " ";
+      margin-left: -5px;
+      width: 0;
+    }
+  }
+
+  &--bottom {
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 90px;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 6px solid #1F2D3D;
+      content: " ";
+      margin-left: -5px;
+      width: 0;
+    }   
+  }
+
+  &--right {
+    &::after {
+      position: absolute;
+      top: 36px;
+      right: -6px;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 6px solid #1F2D3D;
+      content: " ";
+      width: 0;
+    }   
+  }
+
+  &--left {
+    &::after {
+      position: absolute;
+      top: 36px;
+      left: -6px;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-right: 6px solid #1F2D3D;
+      content: " ";
+      width: 0;
+    }   
+  }
+  
+
+  //Tooltip text container
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $text-base-color;
+    border-radius: 12px;
+    content: attr(aria-label); //This pulls in the text from the element with the tooltip
+    padding: rem-calc(12px) rem-calc(16px);
+    text-transform: none;
+    transition: all 0.5s ease;
+    width: 148px;
+  }
+  
+  //Setting up the transition
+  &::before,
+  &::after {
+    color: $primary-color-light-3;
+    text-align: center;
+    font-family: "Avenir";
+    @include font-size($font-size-body-2...);
+  }
+}

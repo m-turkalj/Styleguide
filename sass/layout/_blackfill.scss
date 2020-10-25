@@ -1,0 +1,77 @@
+.blackfill {
+    background-color: $primary-color-dark-1;
+    width: 100%;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        color: $body-base-color;
+        text-align: center;
+        align-items: center;
+
+        @include md {
+            justify-content: space-between;
+            align-items: stretch;
+            text-align: left;
+        }
+
+        &-left {
+            display: none;
+
+            @include md {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+
+        &-middle {
+           //
+        }
+
+        &-right {
+            display: none;
+
+            @include md {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: $margin-sm;
+
+        @include md {
+            margin-bottom: $margin-lg;
+        }
+    }
+
+    &__text {
+        //
+    }
+
+    &__styleguide-block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__minisquare {
+        display: flex;
+    }
+}
+
+.blackfill p {
+    color: $body-base-color;
+    font-family: $font-base;
+    line-height: rem-calc(22px);
+    font-size: $font-size-base;
+    letter-spacing: rem-calc(1.6px);
+    
+
+    @include md {
+        font-size: $font-desktop-base;
+        line-height: rem-calc(30px);
+    }
+}

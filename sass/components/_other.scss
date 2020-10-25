@@ -1,0 +1,122 @@
+// --------OTHER COMPONENTS---------------
+.other-components {
+    &__group {
+        margin-top: rem-calc(40px);
+    }
+}
+
+// BADGE BUBBLES
+.badge {
+    display: flex;
+    flex-direction: row;
+
+    &__container:not(:last-child) {
+        margin-right: $margin-xl;
+    }
+
+    &__component {
+        border-radius: rem-calc(8px);
+        background-color: $text-base-color;
+        color: $body-base-color;
+        display: inline;
+        padding: rem-calc(3.5px) rem-calc(9.5px);
+        font-family: "Avenir";
+        @include font-size($font-size-badge...);
+    }
+}
+
+
+// RATING BUBBLES
+.rating {
+
+    &__container {
+        margin-top: $margin-xl;
+    }
+
+    &__component {
+        border-radius: rem-calc(8px);
+        background-color: $text-base-color;
+        color: $body-base-color;
+        display: inline;
+        padding: rem-calc(7.5px) rem-calc(12px);
+        font-family: "Avenir";
+        @include font-size($font-size-other-md...);
+
+        &--not-active {
+            color: $primary-color-light-1;
+            background-color: $primary-color-light-3;
+        }
+    }
+}
+
+
+// TAB BAR
+.tab-bar {
+    width: 100%;
+
+    &__link {
+        display: flex;
+        position: relative;
+        background: $body-base-color;
+        border: 1px solid $primary-color-light-3;
+        border-radius: 5px;
+        // border
+        hr {
+            transition: all 375ms ease-out;
+            // lets the browser know what will happen
+            will-change: transform, background;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            border: 0;
+            border-radius: 200px 200px 0px 0px;
+            height: $p/3;
+            width: calc(100% / #{$n});
+            background: lighten($white, 50%);
+        }
+        // links
+        a {
+            display: block;
+            width: calc(100% / #{$n});
+            padding: $p*1;
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 0;
+            color: $primary-color-light-3;
+            cursor: pointer;
+            font-family: "Avenir";
+            @include font-size($font-size-form...);
+            // hover and active color changes
+            &:hover {
+                color: $text-base-color;
+                ~ hr {
+                    background: mix(lighten($white, 50%), $blue, 75%);
+                    transition: transform 250ms cubic-bezier(0,.5,.5,1.1), background 250ms ease-out;
+                }
+            }
+            &:active {
+                color: $text-base-color;
+                ~ hr {
+                    background: $blue;
+                    transition: all 250ms ease-out;
+                }
+            }
+            // loop for transforms, needs to be a different percentage for each link
+            @for $i from 1 through $n {
+                &:nth-child(#{$i}) {
+                    &.active {
+                        ~ hr {
+                            transform: translateX(#{($i - 1) * 100%});
+                        }
+                    }
+                    &:hover, &:focus, &:active {
+                        ~ hr, ~ .active ~ hr {
+                            transform: translateX(#{($i - 1) * 100%});
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.dot10 {
+    width: rem-calc(10px);
+    height: rem-calc(10px);
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #ff007a;
+
+    &:hover {
+        animation: neon-red .5s ease-in-out infinite alternate;
+    }
+}
+
+.minisquare {
+    width: rem-calc(13px);
+    height: rem-calc(13px);
+    margin: 0 rem-calc(10px);
+    background-color: $primary-color;
+
+    &:hover {
+        animation: neon-orange 1.5s ease-in-out infinite alternate;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+@keyframes neon-red {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff007a, 0 0 70px #ff007a, 0 0 80px #ff007a, 0 0 100px #ff007a, 0 0 150px #ff007a;
+    }
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff007a, 0 0 35px #ff007a, 0 0 40px #ff007a, 0 0 50px #ff007a, 0 0 75px #ff007a;
+    }
+}
+
+@keyframes neon-orange {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $primary-color, 0 0 70px $primary-color, 0 0 80px $primary-color, 0 0 100px $primary-color, 0 0 150px $primary-color;
+    }
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $primary-color, 0 0 35px $primary-color, 0 0 40px $primary-color, 0 0 50px $primary-color, 0 0 75px $primary-color;
+    }
+}

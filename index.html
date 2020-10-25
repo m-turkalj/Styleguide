@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Styleguide</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-box">
+            <a href="index.html" class="header__logo-box-content">
+                <img src="img/SVG/Stylegouide-logo.svg" alt="Styleguide logo by Matija" class="header__logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul class="navigation__menu">
+                <li class="navigation__menu-item">
+                    <a href="#typography" class="navigation__menu-link">Typography</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#colors" class="navigation__menu-link">Colors</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#buttons" class="navigation__menu-link">Buttons</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#forms" class="navigation__menu-link">Input Forms</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#icons" class="navigation__menu-link">Icons</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="#components" class="navigation__menu-link">Components</a>
+                </li>
+            </ul>
+            <div class="btn-nav btn-nav--open" id="ham-btn">
+                <a href="#" class="btn-nav__holder">
+                    <span class="icon icon-th-menu"></span>
+                </a>
+            </div>
+        </nav>
+
+        <nav class="navigation__mobile" id="navigation">
+            <div class="navigation__mobile-header">
+                <div class="header__logo-box">
+                    <a href="index.html" class="header__logo-box-content">
+                        <img src="img/SVG/Stylegouide-logo.svg" alt="Styleguide logo by Matija" class="header__logo">
+                    </a>
+                </div>
+
+                <div class="btn-nav btn-nav--close" id="close-btn">
+                    <a href="#" class="btn-nav__holder">
+                        <span class="icon icon-close icon-close--yellow"></span>
+                    </a>
+                </div>
+            </div>
+            <ul class="navigation__list">
+                <li class="navigation__list-item">
+                    <a href="#typography" class="navigation__list-link">01 Typography</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#colors" class="navigation__list-link">02 Colors</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#buttons" class="navigation__list-link">03 Buttons</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#forms" class="navigation__list-link">04 Input Forms</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#icons" class="navigation__list-link">05 Icons</a>
+                </li>
+                <li class="navigation__list-item">
+                    <a href="#components" class="navigation__list-link">06 Components</a>
+                </li>
+            </ul> 
+        </nav>
+
+        <a id="button" href="#">
+            <span class="icon icon-arrow-up"></span>
+        </a>
+    </header>
+
+    <main>
+        <section id="typography">
+            <div class="blackfill">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="blackfill__content">
+                            <div class="blackfill__content-left equal-columns">
+                                <h5 class="heading-5 color-white">BEBAS NEUE</h5>
+                            </div>
+
+                            <div class="blackfill__content-middle equal-columns">
+                                <div class="blackfill__title">
+                                    <h1 class="heading-1 color-white">Typography</h2>
+                                </div>
+                                <div class="blackfill__text">
+                                    <p> Type styles for body text, headings & subheadings. <br>
+                                        Changes here will apply site wide.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blackfill__content-right equal-columns">
+                                <div class="blackfill__styleguide-block">
+                                    <div class="dot10"></div>
+                                    <p>Style Guide</p>
+                                </div>
+                                <div class="blackfill__minisquare">
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper grid">
+                <div class="col-desk-12">
+                    <h2 class="heading-2 color-primary weight-bold">Typography</h2>
+                    <div class="line line-full"></div>
+                </div>
+
+                
+                <div class="typography__content col-desk-6">
+                    <div class="typography__title">
+                        <h6 class="heading-6">Font</h6>
+                    </div>
+                    <div class="typography__item">
+                        <h1 class="heading-1">Bebas</h1>
+                    </div> 
+                </div>
+                <div class="typography__content col-desk-6">
+                    <div class="typography__title">
+                        <h6 class="heading-6">Font Weights</h6>
+                    </div>
+                    <div class="typography__item">
+                        <h2 class="heading-2 typography__item--weight-1 weight-bold">Bold</h2>
+                        <h2 class="heading-2 typography__item--weight-1">Regular</h2>
+                    </div>
+                    
+                </div>
+                <div class="col-desk-12">
+                    <div class="line line-full"></div>
+                </div>
+
+                <div class="typography__content col-desk-12">
+                    <div class="typography__title">
+                        <h6 class="heading-6">Pre - defined sizes</h6>
+                    </div>
+                    <div class="typography__item">
+                        <div class="typography__item--size">
+                            <h1 class="heading-1">Aa</h1>
+                            <div class="line line-md"></div>
+                            <p>60px</p>
+                        </div>
+                        <div class="typography__item--size">
+                            <h2 class="heading-2">Aa</h2>
+                            <div class="line line-md"></div>
+                            <p>48px</p>
+                        </div>
+                        <div class="typography__item--size">
+                            <h3 class="heading-3 weight-bold">Aa</h3>
+                            <div class="line line-md"></div>
+                            <p>32px</p>
+                        </div>
+                        <div class="typography__item--size">
+                            <h4 class="heading-4 weight-bold">Aa</h4>
+                            <div class="line line-md"></div>
+                            <p>28px</p>
+                        </div>
+                        <div class="typography__item--size">
+                            <h5 class="heading-5 weight-bold">Aa</h5>
+                            <div class="line line-md"></div>
+                            <p>22px</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="typography__content col-desk-6">
+                    <div class="typography__title">
+                        <h6 class="heading-6">Font</h6>
+                    </div>
+                    <div class="typography__item">
+                        <h1 class="heading-1-alternative">Avenir</h1>
+                    </div>
+                </div>
+
+                <div class="typography__content col-desk-6">
+                    <div class="typography__title">
+                        <h6 class="heading-6">Font Weights</h6>
+                    </div>
+                    <div class="typography__item">
+                        <h2 class="heading-2-alternative typography__item--weight-2 weight-bold">Heavy</h2>
+                        <h2 class="heading-2-alternative typography__item--weight-2 weight-medium">Medium</h2>
+                        <h2 class="heading-2-alternative typography__item--weight-2 weight-regular">Roman</h2>
+                    </div>
+                </div>
+
+                <div class="col-desk-12">
+                    <div class="line line-full"></div>
+                </div>
+                
+                <div class="typography__content col-desk-12">
+                    <div class="typography__title">
+                        <h6 class="heading-6">Pre - defined sizes</h6>
+                    </div>
+                    
+                    <div class="typography__item">
+                        <div class="typography__item--size">
+                            <h1 class="heading-1-alternative">Aa</h1>
+                            <div class="line line-md"></div>
+                            <p>24px</p>
+                        </div>
+                        <div class="typography__item--size">
+                            <h2 class="heading-2-alternative">Aa</h2>
+                            <div class="line line-md"></div>
+                            <p>20px</p>
+                        </div>
+                        <div class="typography__item--size">
+                            <h3 class="heading-3-alternative weight-bold">Aa</h3>
+                            <div class="line line-md"></div>
+                            <p>16px</p>
+                        </div>
+                        <div class="typography__item--size">
+                            <h4 class="heading-4-alternative weight-bold">Aa</h4>
+                            <div class="line line-md"></div>
+                            <p>14px</p>
+                        </div>
+                        <div class="typography__item--size">
+                            <h3 class="heading-5-alternative weight-bold">Aa</h3>
+                            <div class="line line-md"></div>
+                            <p>12px</p>
+                        </div>
+                    </div>
+                    <div class="line line-full"></div>
+                </div>
+
+                <div class="typography__content col-desk-12">
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H1</h6>
+                        </div>
+                        <h1 class="heading-1">Far far away, behind the words mountains</h1>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H2</h6>
+                        </div>
+                        <h2 class="heading-2">Far far away, behind the words mountains, far from</h2>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H2 - Alternative</h6>
+                        </div>
+                        <h2 class="heading-2-alternative">Far far away, behind the words mountains, far</h2>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H3</h6>
+                        </div>
+                        <h3 class="heading-3">Far far away, behind the words mountains, far from the countries nevada</h3>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H3 - Alternative</h6>
+                        </div>
+                        <h3 class="heading-3-alternative">Far far away, behind the words mountains, far from the nevada</h3>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H4</h6>
+                        </div>
+                        <h4 class="heading-4">Far far away, behind the words mountains, far from the countries nevada</h4>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H4 - Alternative</h6>
+                        </div>
+                        <h4 class="heading-4-alternative">Far far away, behind the words mountains, far from the countries nevada and</h4>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H5</h6>
+                        </div>
+                        <h5 class="heading-5">Far far away, behind the words mountains, far from the countries nevada and california, there are so</h5>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">Body</h6>
+                        </div>
+                        <p class="body-text body-text--big weight-bold">Far far away, behind the words mountains, far from the countries nevada</p>
+                        <p class="body-text body-text--big weight-medium">Far far away, behind the words mountains, far from the countries nevada</p>
+                        <p class="body-text body-text--big">Far far away, behind the words mountains, far from the countries nevada</p>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">Body 2</h6>
+                        </div>
+                        <p class="body-text body-text--small weight-bold">Far far away, behind the words mountains, far from the countries nevada</p>
+                        <p class="body-text body-text--small weight-medium">Far far away, behind the words mountains, far from the countries nevada</p>
+                        <p class="body-text body-text--small">Far far away, behind the words mountains, far from the countries nevada</p>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">Caption</h6>
+                        </div>
+                        <p class="caption weight-medium color-text">Far far away, behind the words mountains, far from the countries nevada and california</p>
+                        <p class="caption color-text">Far far away, behind the words mountains, far from the countries nevada and california</p>
+                    </div>
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">Tiny</h6>
+                        </div>
+                        <p class="caption caption--tiny color-text">Far far away, behind the words mountains, far from the countries nevada and california</p>
+                        <p class="caption caption--tiny color-text">Far far away, behind the words mountains, far from the countries nevada and california</p>
+                    </div>
+                </div>
+
+                <div class="col-desk-12">
+                    <h2 class="heading-2 color-primary weight-bold">Paragraphs</h2>
+                    <div class="line line-full"></div>
+                </div>
+
+                <div class="typography__content col-desk-12">
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H1 / Body / Caption</h6>
+                        </div>
+                        <h1 class="heading-1">Aix en provence, Versailles, Avignon, Paris</h1>
+                        <div class="vertical">
+                            <span class="caption-aside"><p>16px</p></span>
+                        </div>
+                        <p class="body-text body-text--big weight-medium">
+                            We had a top notch trip from beginning to end. Customer service was excellent.
+                            Accommodations exceeded expectations and tours were superb. Our daughter
+                            became ill on this trip and out tour guide took us to the clinic and pharmacy...
+                        </p>
+                        <div class="vertical"></div>
+                        <p class="caption capitalize">Far far away, behind the words mountains, far from the countries nevada and california</p>
+                    </div>
+
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H2 / Body / Caption</h6>
+                        </div>
+                        <h2 class="heading-2">Falcorny, Newgrange monument, sites & activities</h2>
+                        <div class="vertical">
+                            <span class="caption-aside"><p>16px</p></span>
+                        </div>
+                        <p class="body-text body-text--big weight-medium">
+                            We had a top notch trip from beginning to end. Customer service was excellent.
+                            Accommodations exceeded expectations and tours were superb. Our daughter
+                            became ill on this trip and out tour guide took us to the clinic and pharmacy...
+                        </p>
+                        <div class="vertical"></div>
+                        <p class="caption capitalize">Far far away, behind the words mountains, far from the countries nevada and california</p>
+                    </div>
+
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H3 / Body 2</h6>
+                        </div>
+                        <h3 class="heading-3">Far far away, behind the words mountains, far from the countries nevada</h3>
+                        <div class="vertical">
+                            <span class="caption-aside"><p>16px</p></span>
+                        </div>
+                        <p class="body-text body-text--small weight-medium">
+                            One of the most unusual activities was falconry. Our trip planner set us up with a local Falconry
+                            company, who went above and beyond to ensure we had a great afternoon.
+                        </p>
+                    </div>
+
+                    <div class="typography__headline">
+                        <div class="typography__headline--title">
+                            <h6 class="heading-6">H4 / Body 2 / Tiny</h6>
+                        </div>
+                        <h4 class="heading-4">Far far away, behind the words mountains, far from the countries nevada and california</h4>
+                        <div class="vertical vertical-md">
+                            <span class="caption-aside"><p>12px</p></span>
+                        </div>
+                        <p class="body-text body-text--small weight-medium">
+                            Wow! Amazing people amazing service. Always on top of things and answering within minutes
+                            from any inquiry/issue we had since we started conversations to plan the trip all the way to the
+                            last day of our holiday.
+                        </p>
+                        <div class="vertical vertical-sm">
+                            <span class="caption-aside"><p>8px</p></span>
+                        </div>
+                        <p class="caption caption--tiny capitalize">Far far away, behind the words mountains, far from the countries nevada and california</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="colors">
+            <div class="blackfill">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="blackfill__content">
+                            <div class="blackfill__content-left equal-columns">
+                                <h5 class="heading-5 color-white">BEBAS NEUE</h5>
+                            </div>
+
+                            <div class="blackfill__content-middle equal-columns">
+                                <div class="blackfill__title">
+                                    <h1 class="heading-1 color-white">Brand Colors</h2>
+                                </div>
+                                <div class="blackfill__text">
+                                    <p> Fill and border colors for backgrounds and more. <br>
+                                        Changes here will apply site wide.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blackfill__content-right equal-columns">
+                                <div class="blackfill__styleguide-block">
+                                    <div class="dot10"></div>
+                                    <p>Style Guide</p>
+                                </div>
+                                <div class="blackfill__minisquare">
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper grid">
+                <div class="col-desk-12">
+                    <h2 class="heading-2 color-primary weight-bold">Colors</h2>
+                    <div class="line line-full"></div>
+                </div>
+
+                <div class="colors__item col-desk-2 col-tab-4 col-mob-2">
+                    <div class="circle-1"></div>
+                    <h4 class="heading-4 mar-t-xl">#050504</h4>
+                    <p class="caption-secondary mar-t-sm">RGB (5,5,4)</p>
+                </div>
+                <div class="colors__item col-desk-2 col-tab-4 col-mob-2">
+                    <div class="circle-2"></div>
+                    <h4 class="heading-4 mar-t-xl">#1F2D3D</h4>
+                    <p class="caption-secondary mar-t-sm">RGB (32,45,61)</p>
+                </div>
+                <div class="colors__item col-desk-2 col-tab-4 col-mob-2">
+                    <div class="circle-3"></div>
+                    <h4 class="heading-4 mar-t-xl">#3C4858</h4>
+                    <p class="caption-secondary mar-t-sm">RGB (60,72,88)</p>
+                </div>
+                <div class="colors__item col-desk-2 col-tab-4 col-mob-2">
+                    <div class="circle-4"></div>
+                    <h4 class="heading-4 mar-t-xl">#8492A6</h4>
+                    <p class="caption-secondary mar-t-sm">RGB (132,146,166)</p>
+                </div>
+                <div class="colors__item col-desk-2 col-tab-4 col-mob-2">
+                    <div class="circle-5"></div>
+                    <h4 class="heading-4 mar-t-xl">#C2CEDB</h4>
+                    <p class="caption-secondary mar-t-sm">RGB (194,206,219)</p>
+                </div>
+                <div class="colors__item col-desk-2 col-tab-4 col-mob-2">
+                    <div class="circle-6"></div>
+                    <h4 class="heading-4 mar-t-xl">#D3DCE6</h4>
+                    <p class="caption-secondary mar-t-sm">RGB (211,220,230)</p>
+                </div>
+                <div class="colors__item col-desk-2 col-tab-4 col-mob-2">
+                    <div class="circle-7"></div>
+                    <h4 class="heading-4 mar-t-xl">#E5E9F2</h4>
+                    <p class="caption-secondary mar-t-sm">RGB (229,233,242)</p>
+                </div>
+                <div class="colors__item col-desk-2 col-tab-4 col-mob-2">
+                    <div class="circle-8"></div>
+                    <h4 class="heading-4 mar-t-xl">#EFF2F7</h4>
+                    <p class="caption-secondary mar-t-sm">RGB (239,242,247)</p>
+                </div>
+                <div class="colors__item col-desk-2 col-tab-4 col-mob-2">
+                    <div class="circle-9"></div>
+                    <h4 class="heading-4 mar-t-xl">#F9FAFC</h4>
+                    <p class="caption-secondary mar-t-sm">RGB (249,250,252)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="buttons">
+            <div class="blackfill">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="blackfill__content">
+                            <div class="blackfill__content-left equal-columns">
+                                <h5 class="heading-5 color-white">BEBAS NEUE</h5>
+                            </div>
+
+                            <div class="blackfill__content-middle equal-columns">
+                                <div class="blackfill__title">
+                                    <h1 class="heading-1 color-white">Buttons & Links</h2>
+                                </div>
+                                <div class="blackfill__text">
+                                    <p>Buttons, links & Read More buttons.  <br>
+                                        Changes here will apply site wide.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blackfill__content-right equal-columns">
+                                <div class="blackfill__styleguide-block">
+                                    <div class="dot10"></div>
+                                    <p>Style Guide</p>
+                                </div>
+                                <div class="blackfill__minisquare">
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper grid">
+                <div class="col-desk-12">
+                    <h2 class="heading-2 color-primary weight-bold">Buttons</h2>
+                    <div class="line line-full"></div>
+                </div>
+
+                <div class="buttons__group col-desk-9 col-tab-12">
+                    <div class="buttons__title">
+                        <h6 class="heading-6">Large buttons</h6>
+                    </div>    
+                    
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn-darker">Default</a>
+                        <a href="javascript:void(0)" class="btn btn-dark">Default</a>
+                        <a href="javascript:void(0)" class="btn">Default</a>
+                        <p class="caption-secondary caption-secondary--md">Default</p>
+                    </div>
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn-darker">
+                            <span class="icon icon-search margin-r"></span>
+                            Default
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-dark">
+                            <span class="icon icon-search margin-r"></span>
+                            Default
+                        </a>
+                        <a href="javascript:void(0)" class="btn">
+                            <span class="icon icon-search icon-search--dark margin-r"></span>
+                            Default
+                        </a>
+                        <p class="caption-secondary caption-secondary--md">Default</p>
+                    </div>
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn-darker">Active</a>
+                        <a href="javascript:void(0)" class="btn btn-dark">Active</a>
+                        <a href="javascript:void(0)" class="btn active">Active</a>
+                        <p class="caption-secondary caption-secondary--md">Active</p>
+                    </div>
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn not-active">Disabled</a>
+                        <a href="javascript:void(0)" class="btn not-active">Disabled</a>
+                        <a href="javascript:void(0)" class="btn not-active not-active--empty">Disabled</a>
+                        <p class="caption-secondary caption-secondary--md">Disabled</p>
+                    </div>
+                </div>
+
+                <div class="buttons__group col-desk-3 col-tab-4 col-mob-2">
+                    <div class="buttons__title">
+                        <h6 class="heading-6">Other buttons</h6>
+                    </div> 
+                    
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn--lg btn-darker">
+                            <span class="icon-loading-circle color-white"></span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn--md btn-darker">
+                            <span class="icon icon-loading-dot color-white"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="buttons__group col-desk-6 col-tab-12 col-mob-4">
+                    <div class="buttons__title">
+                        <h6 class="heading-6">Medium buttons</h6>
+                    </div> 
+                    
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn--md btn-darker">Default</a>
+                        <a href="javascript:void(0)" class="btn btn--md btn-dark">Default</a>
+                        <a href="javascript:void(0)" class="btn btn--md">Default</a>
+                        <p class="caption-secondary caption-secondary--sm">Default</p>
+                    </div>
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn--md btn-darker">
+                            <span class="icon icon-search icon-search--sm margin-r"></span>
+                            Default
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn--md btn-dark">
+                            <span class="icon icon-search icon-search--sm margin-r"></span>
+                            Default
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn--md">
+                            <span class="icon icon-search icon-search--dark icon-search--sm margin-r"></span>
+                            Default
+                        </a>
+                        <p class="caption-secondary caption-secondary--sm">Default</p>
+                    </div>
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn--md btn-darker">Active</a>
+                        <a href="javascript:void(0)" class="btn btn--md btn-dark">Active</a>
+                        <a href="javascript:void(0)" class="btn btn--md active">Active</a>
+                        <p class="caption-secondary caption-secondary--sm">Active</p>
+                    </div>
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn--md not-active">Disabled</a>
+                        <a href="javascript:void(0)" class="btn btn--md not-active">Disabled</a>
+                        <a href="javascript:void(0)" class="btn btn--md not-active not-active--empty">Disabled</a>
+                        <p class="caption-secondary caption-secondary--sm">Disabled</p>
+                    </div>
+                </div>
+
+                <div class="buttons__group col-desk-2 col-tab-4 col-mob-4">
+                    <div class="buttons__title">
+                        <h6 class="heading-6">Float buttons</h6>
+                    </div> 
+                    
+                    <div class="buttons__item buttons__item-float">
+                        <a href="javascript:void(0)" class="btn btn--float btn--float-md">
+                            <span class="icon icon-close"></span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn--float btn--float-md btn-dark">
+                            <span class="icon icon-close"></span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn--float btn--float-md btn-light">
+                            <span class="icon icon-close icon-close--dark"></span>
+                        </a>
+                    </div>
+                    <div class="buttons__item buttons__item-float">
+                        <a href="javascript:void(0)" class="btn btn--float btn--float-sm">
+                            <span class="icon icon-combine"></span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn--float btn--float-sm btn-dark">
+                            <span class="icon icon-combine"></span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn--float btn--float-sm btn-light">
+                            <span class="icon icon-combine icon-combine--dark"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="buttons__group col-desk-4 col-tab-8 col-mob-4">
+                    <div class="buttons__title">
+                        <h6 class="heading-6">Text buttons</h6>
+                    </div> 
+                    
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn--clear">Default</a>
+                        <a href="javascript:void(0)" class="btn btn--clear">Active</a>
+                    </div>
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn--clear">
+                            <span class="icon icon-filter margin-r"></span>
+                            Default
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn--clear">
+                            <span class="icon icon-filter margin-r"></span>
+                            Active
+                        </a>
+                    </div>
+                    <div class="buttons__item">
+                        <a href="javascript:void(0)" class="btn btn--clear">
+                            Default
+                            <span class="icon icon-next margin-l"></span>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn--clear">
+                            Active
+                            <span class="icon icon-next margin-l"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="forms">
+            <div class="blackfill">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="blackfill__content">
+                            <div class="blackfill__content-left equal-columns">
+                                <h5 class="heading-5 color-white">BEBAS NEUE</h5>
+                            </div>
+
+                            <div class="blackfill__content-middle equal-columns">
+                                <div class="blackfill__title">
+                                    <h1 class="heading-1 color-white">Input forms</h2>
+                                </div>
+                                <div class="blackfill__text">
+                                    <p> Input labels, with checkboxes, date time, search bar & dropdown dialogs.  <br>
+                                        Changes here will apply site wide.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blackfill__content-right equal-columns">
+                                <div class="blackfill__styleguide-block">
+                                    <div class="dot10"></div>
+                                    <p>Style Guide</p>
+                                </div>
+                                <div class="blackfill__minisquare">
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper grid">
+                <div class="col-desk-12">
+                    <h2 class="heading-2 color-primary weight-bold">Input Forms</h2>
+                    <div class="line line-full"></div>
+                </div>
+
+                <div class="forms__content col-desk-4 col-tab-6 col-mob-4">
+                    <h6 class="heading-6">Input Labels</h6>
+                    <form>
+                        <div class="form-group">
+                            <label for="label">Label</label>
+                            <input class="form-control" type="text" name="user__name" placeholder="Placeholder">
+                        </div>
+                        <div class="form-group">
+                            <label for="label" class="color-dark">Label</label>
+                            <input class="form-control form-control--typing" type="text" name="user__name" placeholder="Typing |">
+                        </div>
+                        <div class="form-group">
+                            <label for="label">Label</label>
+                            <input class="form-control form-control--value" readonly type="text" name="user__name" placeholder="Value">
+                        </div>
+                        <div class="form-group">
+                            <label for="label">Error Message</label>
+                            <span class="icon icon-close icon-close--dark state"></span>
+                            <input class="form-control form-control--error" type="text" name="user__name" placeholder="Value">
+                        </div>
+                        <div class="form-group">
+                            <label for="label">Positive Message</label>
+                            <span class="icon icon-check state"></span>
+                            <input class="form-control form-control--success" type="text" name="user__name" placeholder="Value">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="label" class="disabled">Label</label>
+                            <input class="form-control form-control--value" type="text" name="user__name" placeholder="Disabled" disabled>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="forms__content col-desk-4 col-tab-6 col-mob-4">
+                    <div class="styleguide__feature">
+                        <h6 class="heading-6">Input Labels With Checkboxes</h6>
+                        <form>
+                            <div class="form-group">
+                                <label for="label">Label</label>
+                                <input class="form-control" type="text" name="user__name" placeholder="Placeholder">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="mycheckbox" name="remember me">
+                                    <label for="remeber me" class="near-text">Remember Me</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="label" class="color-dark">Label</label>
+                                <input class="form-control color-dark" type="text" name="user__name" placeholder="Typing |">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="mycheckbox" name="remember me" checked="checked">
+                                    <label for="remeber me" class="near-text color-dark">Remember Me</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="label">Label</label>
+                                <input class="form-control form-control--value" type="text" name="user__name" placeholder="Value">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="mycheckbox" name="remember me" checked="checked">
+                                    <label for="remeber me" class="near-text color-dark">Remember Me</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="label" class="disabled">Label</label>
+                                <input class="form-control" type="text" name="user__name" placeholder="Disabled" disabled>
+                                <div class="checkbox">
+                                    <input type="checkbox" class="mycheckbox" name="remember me" disabled>
+                                    <label for="remeber me" class="near-text">Remember Me</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="forms__content col-desk-4 col-tab-6 col-mob-4">
+                    <div class="styleguide__feature">
+                        <h6 class="heading-6">Text Area</h6>
+                        <form>
+                            <div class="form-group">
+                                <label for="label">Label</label>
+                                <textarea name="textarea" class="form-control" cols="10" rows="3" placeholder="Placeholder"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="label" class="color-dark">Label</label>
+                                <textarea name="textarea" class="form-control form-control--typing" cols="10" rows="3" placeholder="Computers have become ubiquitous in almost every facet of our |"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="label">Label</label>
+                                <textarea name="textarea" class="form-control form-control--value" cols="10" rows="3" placeholder="Computers have become ubiquitous in almost every facet of our lives in here."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="label" class="disabled">Label</label>
+                                <textarea name="textarea" class="form-control" cols="10" rows="3" placeholder="Computers have become ubiquitous in almost every facet of our lives in here." disabled></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="forms__content col-desk-4 col-tab-6 col-mob-4">
+                    <div class="styleguide__feature">
+                        <h6 class="heading-6">Date time picker</h6>
+                        <form>
+                            <div class="form-group">
+                                <label for="label">Select date</label>
+                                <span class="icon icon-calendar select-icon select-icon--right"></span>
+                                <input name="calendar" type="date" value="1994-07-21" class="form-control"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="label">Select date</label>
+                                <span class="icon icon-calendar select-icon select-icon--right"></span>
+                                <input name="calendar" type="date" value="11994-07-21" class="form-control form-control--value"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="label" class="disabled">Select date</label>
+                                <span class="icon icon-calendar select-icon select-icon--right"></span>
+                                <input name="calendar" type="date" value="11994-07-21" class="form-control" disabled></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="label">Select date</label>
+                                <span class="icon icon-calendar select-icon select-icon--right"></span>
+                                <input name="calendar" type="date" value="11994-07-21" class="form-control form-control--date"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="forms__content col-desk-4 col-tab-6 col-mob-4">
+                    <div class="styleguide__feature">
+                        <h6 class="heading-6">Search Bar</h6>
+                        <form>
+                            <div class="form-group">
+                                <label for="label">Search</label>
+                                <span class="icon icon-search icon-search--sm icon-search--dark select-icon select-icon--left"></span>
+                                <input class="form-control" type="search" name="q" placeholder='Try "dodge challenger"'>
+                            </div>
+                            <div class="form-group">
+                                <label for="label">Search</label>
+                                <span class="icon icon-search icon-search--sm icon-search--dark select-icon select-icon--left"></span>
+                                <input class="form-control form-control--typing" type="search" name="q" placeholder="Ferrari GT |">
+                            </div>
+                            <div class="form-group">
+                                <label for="label">Search</label>
+                                <span class="icon icon-search icon-search--sm icon-search--dark select-icon select-icon--left"></span>
+                                <input class="form-control form-control--value" type="search" name="q" placeholder="Ferrari GT 955">
+                            </div>
+                            <div class="form-group">
+                                <label for="label">Search</label>
+                                <span class="icon icon-search icon-search--sm icon-search--dark select-icon select-icon--left"></span>
+                                <input class="form-control form-control--typing" type="search" name="q" placeholder="Ferrari GT |">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="forms__content col-desk-4 col-tab-6 col-mob-4">
+                    <div class="styleguide__feature">
+                        <h6 class="heading-6">Dropdown Dialog</h6>
+                        <form>
+                            <div class="form-group">
+                                <label for="list">Label</label>
+                                <div class="dropdown" onclick="showCheckboxes()">
+                                    <select class="dropdown__select">
+                                        <option>Placeholder</option>
+                                    </select>
+                                    <span class="icon icon-arrow-down dropdown__arrow"></span>
+                                    <div class="overSelect"></div>
+                                </div>
+                                <div class="dropdown__list" id="checkboxes">
+                                    <label class="dropdown__item"><input type="checkbox" class="mycheckbox mycheckbox--empty">List value 1</label>
+                                    <label class="dropdown__item"><input type="checkbox" class="mycheckbox mycheckbox--empty">List value 2</label>
+                                    <label class="dropdown__item"><input type="checkbox" class="mycheckbox mycheckbox--empty">List value 3</label> 
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="icons">
+            <div class="blackfill">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="blackfill__content">
+                            <div class="blackfill__content-left equal-columns">
+                                <h5 class="heading-5 color-white">BEBAS NEUE</h5>
+                            </div>
+
+                            <div class="blackfill__content-middle equal-columns">
+                                <div class="blackfill__title">
+                                    <h1 class="heading-1 color-white">Icons for all</h2>
+                                </div>
+                                <div class="blackfill__text">
+                                    <p> Several icons to fill emptiness. <br>
+                                        Changes here will apply site wide.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blackfill__content-right equal-columns">
+                                <div class="blackfill__styleguide-block">
+                                    <div class="dot10"></div>
+                                    <p>Style Guide</p>
+                                </div>
+                                <div class="blackfill__minisquare">
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper grid">
+                <div class="col-desk-12">
+                    <h2 class="heading-2 color-primary weight-bold">Icons</h2>
+                    <div class="line line-full"></div>
+                </div>
+
+                <div class="icons__group col-desk-4 col-tab-6 col-mob-4">
+                    <div class="icons__title">
+                        <h6 class="heading-6">16px icons</h6>
+                    </div>
+                    <div class="icons__group-16">
+                        <span class="icon icon-search icon-search--dark"></span>
+                        <span class="icon icon-combine icon-combine--dark"></span>
+                        <span class="icon icon-close icon-close--dark"></span>
+                        <span class="icon icon-filter"></span>
+                        <span class="icon icon-next"></span>
+                        <span class="icon icon-loading-dot icon-loading-dot--dark"></span>
+                        <span class="icon icon-check"></span>
+                        <span class="icon icon-eye---show"></span>
+                        <span class="icon icon-eye---hide"></span>
+                        <span class="icon icon-calendar"></span>
+                        <span class="icon icon-star"></span>
+                        <span class="icon icon-arrow-up"></span>
+                        <span class="icon icon-arrow-down"></span>
+                        <span class="icon icon-close-glyph"></span>
+                        <span class="icon icon-check-circle"></span>
+                        <span class="icon icon-arrow-left"></span>
+                        <span class="icon icon-arrow-right"></span>
+                        <span class="icon icon-close-outline"></span>
+                        <span class="icon icon-verify"></span>
+                        <span class="icon icon-read-more"></span>
+                        <span class="icon icon-add"></span>
+                        <span class="icon icon-bin"></span>
+                        <span class="icon icon-mark-read"></span>
+                        <span class="icon icon-time"></span>
+                        <span class="icon icon-camera"></span>
+                        <span class="icon icon-edit"></span>
+                        <span class="icon icon-sold"></span>
+                        <span class="icon icon-market"></span>
+                        <span class="icon icon-add-1"></span>
+                        <span class="icon icon-location-map"></span>
+                        <span class="icon icon-subtract"></span>
+                        <span class="icon icon-facebook icon-facebook--dark"></span>
+                        <span class="icon icon-google"></span>
+                        <span class="icon icon-apple"></span>
+                        <span class="icon icon-vimeo"></span>
+                        <span class="icon icon-linkedin icon-linkedin--dark"></span>
+                        <span class="icon icon-twitter"></span>
+                        <span class="icon icon-pinterest"></span>
+                        <span class="icon icon-instagram icon-instagram--dark"></span>
+                        <span class="icon icon-info"></span>
+                    </div>
+                </div>
+
+                <div class="icons__group col-desk-5 col-tab-6 col-mob-4">
+                    <div class="icons__title">
+                        <h6 class="heading-6">24px icons</h6>
+                    </div>
+                    <div class="icons__group-24">
+                        <span class="icon icon-card"></span>
+                        <span class="icon icon-chat"></span>
+                        <span class="icon icon-ar"></span>
+                        <span class="icon icon-garage"></span>
+                        <span class="icon icon-profile"></span>
+                        <span class="icon icon-filter"></span>
+                        <span class="icon icon-notification"></span>
+                        <span class="icon icon-location"></span>
+                        <span class="icon icon-verify"></span>
+                        <span class="icon icon-more"></span>
+                        <span class="icon icon-apple"></span>
+                        <span class="icon icon-facebook"></span>
+                        <span class="icon icon-google"></span>
+                        <span class="icon icon-search"></span>
+                        <span class="icon icon-delete"></span>
+                        <span class="icon icon-back"></span>
+                        <span class="icon icon-grid"></span>
+                        <span class="icon icon-heart"></span>
+                        <span class="icon icon-compare"></span>
+                        <span class="icon icon-action"></span>
+                        <span class="icon icon-send-message"></span>
+                        <span class="icon icon-time"></span>
+                        <span class="icon icon-camera"></span>
+                        <span class="icon icon-list"></span>
+                        <span class="icon icon-loading-circle"></span>
+                        <span class="icon icon-world"></span>
+                    </div>
+                </div>
+
+                <div class="icons__group col-desk-3 col-mob-4">
+                    <div class="icons__title">
+                        <h6 class="heading-6">32px icons</h6>
+                    </div>
+                    <div class="icons__group-32">
+                        <span class="icon icon-money"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="components">
+            <div class="blackfill">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="blackfill__content">
+                            <div class="blackfill__content-left equal-columns">
+                                <h5 class="heading-5 color-white">BEBAS NEUE</h5>
+                            </div>
+
+                            <div class="blackfill__content-middle equal-columns">
+                                <div class="blackfill__title">
+                                    <h1 class="heading-1 color-white">Other Components</h2>
+                                </div>
+                                <div class="blackfill__text">
+                                    <p> Some other components you can find. <br>
+                                        Changes here will apply site wide.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="blackfill__content-right equal-columns">
+                                <div class="blackfill__styleguide-block">
+                                    <div class="dot10"></div>
+                                    <p>Style Guide</p>
+                                </div>
+                                <div class="blackfill__minisquare">
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                    <div class="minisquare"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper grid">
+                <div class="col-desk-12">
+                    <h2 class="heading-2 color-primary weight-bold">Other components</h2>
+                    <div class="line line-full"></div>
+                </div>
+
+                <div class="other-components__group col-desk-3 col-tab-4 col-mob-2">
+                    <div class="icons__title">
+                        <h6 class="heading-6">Checkboxes</h6>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="mycheckbox" name="Inactive">
+                        <label for="Inactive" class="near-text color-dark">Inactive</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="mycheckbox" name="Inactive" checked="checked">
+                        <label for="Active" class="near-text color-dark">Active</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="mycheckbox" name="Inactive" disabled="disabled">
+                        <label for="Disabled" class="near-text">Disabled</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="mycheckbox" name="Inactive" disabled="disabled" checked="checked">
+                        <label for="Disabled Active" class="near-text">Disabled Active</label>
+                    </div>
+                </div>
+
+                <form class="other-components__group col-desk-3 col-tab-4 col-mob-2">
+                    <div class="icons__title">
+                        <h6 class="heading-6">Radio buttons</h6>
+                    </div>
+                    <div class="toggles">
+                        <div class="radio-btn">
+                            <input id="radio-1" type="radio" value="select option" name="radio-group">
+                            <label for="radio-1" class="near-text color-dark">Inactive</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input id="radio-2" type="radio" value="select option" name="radio-group" checked="checked">
+                            <label for="radio-2" class="near-text color-dark">Active</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input id="radio-3" type="radio" value="select option" name="radio-group" disabled="disabled">
+                            <label for="radio-3" class="near-text">Disabled</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input id="radio-4" type="radio" value="select option" name="radio-group" disabled="disabled" checked="checked">
+                            <label for="radio-4" class="near-text">Disabled Active</label>
+                        </div>
+                    </div>
+                </form>
+
+                <form class="other-components__group col-desk-3 col-tab-4 col-mob-2">
+                    <div class="icons__title">
+                        <h6 class="heading-6">Toggle buttons</h6>
+                    </div>
+                    <div class="toggles">
+                        <div class="toggle-btn">
+                            <input id="checkbox-7" type="checkbox" value="Select option">
+                            <label for="checkbox-7" class="switch round near-text color-dark">Inactive</label>
+                        </div>
+                        <div class="toggle-btn">
+                            <input id="checkbox-8" type="checkbox" value="minimal" checked>
+                            <label for="checkbox-8" class="switch round near-text color-dark">Active</label>
+                        </div>
+                        <div class="toggle-btn">
+                            <input id="checkbox-3" type="checkbox" value="minimal" disabled="disabled">
+                            <label for="checkbox-3" class="switch round near-text">Disabled Inactive</label>
+                        </div>
+                        <div class="toggle-btn">
+                            <input id="checkbox-4" type="checkbox" value="minimal"  disabled="disabled" checked="checked">
+                            <label for="checkbox-4" class="switch round near-text">Disabled Active</label>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="other-components__group col-desk-3 col-tab-4 col-mob-2">
+                    <div class="icons__title">
+                        <h6 class="heading-6">Rating</h6>
+                    </div>
+                    <div class="rating">
+                        <div class="rating__container">
+                            <span class="rating__component"><span class="icon icon-star"></span>4.5</span>
+                        </div>
+                        <div class="rating__container">
+                            <span class="rating__component rating__component--not-active">No Rating</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="other-components__group col-desk-3 col-tab-6">
+                    <div class="icons__title">
+                        <h6 class="heading-6">Badge</h6>
+                    </div>
+                    <div class="badge">
+                        <div class="badge__container">
+                            <span class="badge__component">3</span>
+                        </div>
+                        <div class="badge__container">
+                            <span class="badge__component">34</span>
+                        </div>
+                        <div class="badge__container">
+                            <span class="badge__component">345</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="other-components__group col-desk-5 col-tab-8 col-mob-4">
+                    <div class="icons__title">
+                        <h6 class="heading-6">Tab bar</h6>
+                    </div>
+                    <div class="tab-bar">
+                        <nav class="tab-bar__link">
+                            <a>Active</a>
+                            <a>Inactive</a>
+                            <a>Inactive</a>
+                            <a>Inactive</a>
+                            <hr/>
+                        </nav>
+                    </div> 
+                </div>
+
+                <div class="other-components__group col-desk-12 col-tab-6 col-mob-4">
+                    <div class="icons__title">
+                        <h6 class="heading-6">Tooltips</h6>
+                    </div>
+                    <div class="tooltip">  
+                        <div class="tooltip__content">
+                            <span class="tooltip-toggle tooltip-toggle--top" aria-label="If you are in the market please follow this thing!" tabindex="0"></span>
+                        </div>
+                        <div class="tooltip__content">
+                            <span class="tooltip-toggle tooltip-toggle--bottom" aria-label="If you are in the market please follow this thing!" tabindex="0"></span>
+                        </div>
+                        <div class="tooltip__content">
+                            <span class="tooltip-toggle tooltip-toggle--left" aria-label="If you are in the market please follow this thing!" tabindex="0"></span>
+                        </div>
+                        <div class="tooltip__content">
+                            <span class="tooltip-toggle tooltip-toggle--right" aria-label="If you are in the market please follow this thing!" tabindex="0"></span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="other-components__group col-desk-4 col-mob-4">
+                    <div class="icons__title">
+                        <h6 class="heading-6">Slider</h6>
+                    </div>
+                    <form class="range-field">
+                        <label for="number" class="near-text color-dark">0</label>
+                        <input type="range" id="myRange1" min="0" max="5000" value="1500" class="slider">
+                        <span type="number" min="0" max="5000" class="range-number">
+                            <span id="myValue1"></span>
+                        </span>
+                        <label for="number" class="fixed-number near-text color-dark">5000</label>
+                    </form>
+                    
+                    <form class="range-field">
+                        <label for="number" class="near-text color-dark">0</label>
+                        <input type="range" id="myRange2" min="0" max="5000" value="700" class="slider">
+                        <span type="number" min="0" max="5000" class="range-number">
+                            <span id="myValue2"></span>
+                        </span>
+    
+                        <input type="range" id="myRange3" min="0" max="5000" value="2800" class="slider">
+                        <span type="number" min="0" max="5000" class="range-number">
+                            <span id="myValue3"></span>
+                        </span>
+                        <label for="number" class="fixed-number near-text color-dark">5000</label>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__content-item">
+                        <h3 class="heading-3 footer__title">About me</h3>
+                        <p>I am Matija Turkalj, frontend <br>
+                            developer, ready to create <br>
+                            some good websites</p>
+                    </div>
+                    <div class="footer__content-item">
+                        <h3 class="heading-3 footer__title">Contact info</h3>
+                        <p>Email: <a class="footer__link" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=matija.turkalj5@gmail.com" target="_blank" rel="noopener noreferrer">matija.turkalj5@gmail.com</a></p>
+                        <p>Phone: <a class="footer__link" href="tel:+385977354916" target="_blank" rel="noopener noreferrer">+385 97 735 4916</a></p>
+                        <p>Currently located in <a class="footer__link" href="https://www.google.com/maps/place/Karlovac/@45.4923079,15.4895376,12z/data=!3m1!4b1!4m5!3m4!1s0x47642331b9df2dc1:0x400ad50862bbb70!8m2!3d45.4928973!4d15.5552683" target="_blank" rel="noopener noreferrer">Karlovac, Croatia</a></p>
+                    </div>
+                    <div class="footer__content-item">
+                        <h3 class="heading-3 footer__title">Social</h3>
+                        <div class="footer__social-media">
+                            <a target="_blank" href="https://www.linkedin.com/in/matija-turkalj-3684ab159/" class="footer__social-media-link">
+                                <span class="icon icon-linkedin color-white"></span>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/matija.turkalj1" class="footer__social-media-link">
+                                <span class="icon icon-facebook color-white"></span>
+                            </a>
+                            <a target="_blank" href="https://github.com/m-turkalj" class="footer__social-media-link">
+                                <span class="icon icon-git color-white"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.checkbox {
+    margin-top: $margin-md;
+}
+
+.mycheckbox {
+    position: relative;
+    left: -3px;
+    margin-top: 0;
+
+    &:active {
+        transform: translateY(1px);
+    }
+
+    &--empty {
+        position: absolute;
+        left: unset;
+        right: rem-calc(16px);
+    }
+}
+
+.mycheckbox[type="checkbox"]:before {
+    position: relative;
+    display: block;
+    width: rem-calc(12px);
+    height: rem-calc(12px);
+    background: $body-base-color;
+    box-sizing: border-box;
+    content: "";
+}
+
+.mycheckbox[type="checkbox"]:after {
+    position: relative;
+    display: block;
+    top: rem-calc(-12px);
+    width: rem-calc(16px);
+    height: rem-calc(16px);
+    border-radius: 5px;
+    border:  1px solid $primary-color-light-3;
+    background-color: $body-base-color;
+    box-sizing: border-box;
+    cursor: pointer;
+    content: "";
+}
+
+.mycheckbox[type="checkbox"]:checked::after {
+    background-image: url(../img/SVG/Check-White.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    background-color: $text-base-color;
+    border: none;
+}
+
+.mycheckbox[type="checkbox"]:not(:disabled):checked:hover:after {
+    background-image: url(../img/SVG/Check-White.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+}
+
+
+.mycheckbox[type="checkbox"]:not(:disabled):hover:after{
+    border-color: $primary-color-light-1;
+}

@@ -1,0 +1,364 @@
+.icons {
+
+  &__title {
+    margin-bottom: $margin-xl;
+  }
+  
+  &__group {
+    margin-top: rem-calc(40px);
+
+    &-16 span {
+      font-size: $font-icon-sm;
+      padding-right: rem-calc(24px);
+      margin-bottom: $margin-lgx2;
+    }
+
+    &-24 span {
+      font-size: $font-icon-md;
+      padding-right: rem-calc(32px);
+      margin-bottom: rem-calc(40px);
+    }
+
+    &-32 span {
+      font-size: $font-icon-lg;
+    }
+  }
+}
+
+.icons__group span {
+  color: $text-base-color;
+}
+
+// Icomoon style for icons
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-money:before {
+    content: "\e907";
+  }
+  .icon-th-menu:before {
+    content: "\e942";
+  }
+  .icon-action:before {
+    content: "\e927";
+  }
+  .icon-ar:before {
+    content: "\e929";
+  }
+  .icon-back:before {
+    content: "\e92a";
+  }
+  .icon-card:before {
+    content: "\e92c";
+  }
+  .icon-chat:before {
+    content: "\e92d";
+  }
+  .icon-compare:before {
+    content: "\e92e";
+  }
+  .icon-delete:before {
+    content: "\e92f";
+  }
+  .icon-facebook:before {
+    content: "\e930";
+  }
+  .icon-garage:before {
+    content: "\e932";
+  }
+  .icon-git:before {
+    content: "\e933";
+  }
+  .icon-grid:before {
+    content: "\e935";
+  }
+  .icon-heart:before {
+    content: "\e936";
+  }
+  .icon-list:before {
+    content: "\e937";
+  }
+  .icon-loading-circle:before {
+    content: "\e90a";
+  }
+  .icon-location:before {
+    content: "\e939";
+  }
+  .icon-more:before {
+    content: "\e93a";
+  }
+  .icon-notification:before {
+    content: "\e93b";
+  }
+  .icon-profile:before {
+    content: "\e93c";
+  }
+  .icon-search:before {
+    content: "\e90d";
+  }
+  .icon-send-message:before {
+    content: "\e93e";
+  }
+  .icon-verify-empty:before {
+    content: "\e940";
+  }
+  .icon-world:before {
+    content: "\e941";
+  }
+  .icon-add:before {
+    content: "\e900";
+  }
+  .icon-add-1:before {
+    content: "\e901";
+  }
+  .icon-apple:before {
+    content: "\e902";
+  }
+  .icon-arrow-down:before {
+    content: "\e903";
+  }
+  .icon-arrow-left:before {
+    content: "\e904";
+  }
+  .icon-arrow-right:before {
+    content: "\e905";
+  }
+  .icon-arrow-up:before {
+    content: "\e906";
+  }
+  .icon-bin:before {
+    content: "\1f361";
+  }
+  .icon-calendar:before {
+    content: "\e908";
+  }
+  .icon-camera:before {
+    content: "\e909";
+  }
+  .icon-check:before {
+    content: "\e90e";
+  }
+  .icon-check-circle:before {
+    content: "\e917";
+  }
+  .icon-close-glyph:before {
+    content: "\e90b";
+  }
+  .icon-close-outline:before {
+    content: "\e90c";
+  }
+  .icon-close:before {
+    content: "\e912";
+  }
+  .icon-combine:before {
+    content: "\e916";
+  }
+  .icon-edit:before {
+    content: "\e90f";
+  }
+  .icon-eye---hide:before {
+    content: "\e910";
+  }
+  .icon-eye---show:before {
+    content: "\e911";
+  }
+  .icon-filter:before {
+    content: "\e913";
+  }
+  .icon-google:before {
+    content: "\e914";
+  }
+  .icon-info:before {
+    content: "\e915";
+  }
+  .icon-instagram:before {
+    content: "\e91f";
+  }
+  .icon-linkedin:before {
+    content: "\e938";
+  }
+  .icon-loading-dot:before {
+    content: "\e918";
+  }
+  .icon-location-map:before {
+    content: "\e919";
+  }
+  .icon-mark-read:before {
+    content: "\e91a";
+  }
+  .icon-market:before {
+    content: "\e91b";
+  }
+  .icon-next:before {
+    content: "\e91c";
+  }
+  .icon-pinterest:before {
+    content: "\e91d";
+  }
+  .icon-read-more:before {
+    content: "\e91e";
+  }
+  .icon-sold:before {
+    content: "\e920";
+  }
+  .icon-star:before {
+    content: "\e921";
+  }
+  .icon-subtract:before {
+    content: "\e922";
+  }
+  .icon-time:before {
+    content: "\e923";
+  }
+  .icon-twitter:before {
+    content: "\e924";
+  }
+  .icon-verify:before {
+    content: "\e925";
+  }
+  .icon-vimeo:before {
+    content: "\e926";
+  }
+  
+
+// My style for icons:
+
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: middle;
+  color:$text-base-color;
+  font-size: $icon-font-sm;
+}
+
+.icon-facebook,
+.icon-instagram,
+.icon-linkedin,
+.icon-git {
+  font-size: $icon-font-lg;
+}
+
+.icon-instagram,
+.icon-linkedin,
+.icon-facebook,
+.icon-loading-dot {
+  &--dark {
+    color: $primary-color-dark-2;
+  }
+}
+
+.icon-loading-circle {
+  color: $body-base-color;
+  font-size: $icon-font-md;
+
+  @include sm {
+    font-size: $icon-font-lg;
+  }
+}
+
+.icon-search {
+  color: $body-base-color;
+  font-size: $icon-font-sm;
+
+  @include sm {
+    font-size: $icon-font-md;
+  }
+
+  &--dark {
+    color: $primary-color-dark-2;
+  }
+
+  &--sm {
+    font-size: $icon-font-sm;
+  }
+
+  &--lg {
+    font-size: $icon-font-lg;
+  }
+}
+
+.icon-close {
+  color: $body-base-color;
+  font-size: $icon-font-sm;
+
+  &--dark {
+    color: $primary-color-dark-1;
+  }
+
+  &--yellow {
+    color: $primary-color;
+    font-size: $icon-font-lg;
+  }
+}
+
+.icon-combine {
+  color: $body-base-color;
+  font-size: $icon-font-sm;
+
+  &--dark {
+    color: $primary-color-dark-1;
+  }
+}
+
+.icon-th-menu {
+  color: $primary-color;
+  font-size: $icon-font-lg;
+}
+
+.select-icon {
+  position: absolute;
+
+  &--right {
+    top: rem-calc(42px);
+    right: rem-calc(20px);
+  }
+
+  &--left {
+    top: rem-calc(40px);
+    left: rem-calc(16px);
+  }
+}
+
+.icon-star {
+  color: $body-base-color;
+  font-size: $font-icon-xs;
+  margin-right: $margin-sm;
+}
+
+.icon-arrow-up {
+  color: $body-base-color;
+  font-size: $font-icon-md;
+  margin-top: rem-calc(4px);
+
+  @include md {
+    margin-top: $margin-sm;
+    font-size: $font-icon-lg;
+  }
+}
+
+.margin-r {
+  margin-right: $margin-sm;
+}
+
+.margin-l {
+  margin-left: $margin-sm;
+}
+
+.state {
+  position: absolute;
+  top: 41px;
+  right: 17px;
+  z-index: 1;
+}

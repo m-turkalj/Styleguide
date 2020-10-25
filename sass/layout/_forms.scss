@@ -1,0 +1,77 @@
+.forms {
+
+    &__content {
+        margin-top: rem-calc(30px);
+        margin-bottom: rem-calc(75px);
+
+        @include sm {
+            margin-top: rem-calc(40px);
+            margin-bottom: rem-calc(100px);
+        }
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    max-width: rem-calc(343px);
+    margin-top: $margin-lgx2;
+    position: relative;
+}
+
+.form-control {
+    border: 1px solid $primary-color-light-3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    padding: $input-wrap;
+    font-family: $font-secondary;
+    @include font-size($font-size-form...);
+
+    &--typing,
+    &--error,
+    &--success,
+    &--value {
+        &::placeholder {
+            color: $primary-color-dark-2;
+        }
+    }
+
+    &--typing,
+    &--error,
+    &--success,
+    &--date {
+        border-color: $primary-color-dark-2;
+    }
+}
+
+input::placeholder, 
+textarea::placeholder {
+    color: $primary-color-light-3;
+}
+
+input[type=search] {
+    padding-left: rem-calc(40px);
+}
+
+textarea {
+    resize: none;
+}
+
+
+// Calendar default date picker
+[type="date"] {
+    background:#fff;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+
+// For styling radio,checkbox,switches,toggles
+form {
+    @include formToggles($fontSize, $lineHeight, 3, $primary, $secondary, $disable);
+}

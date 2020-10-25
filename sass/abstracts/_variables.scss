@@ -1,0 +1,253 @@
+// -----------BREAKPOINT VARIABLES-------------------------------------- 
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+// -----------FONT VARIABLES-------------------------------------- 
+
+$font-base: 'BebasNeue';
+$font-secondary: 'Avenir';
+
+
+// Font weight
+// 400 for BebasNeue-Regular and Avenir-Roman
+$font-weight-normal: 400;
+// 500 for Avenir-Medium
+$font-weight-medium: 500;
+// 700 for BebasNeue-Bold and Avenir-Heavy
+$font-weight-bold: 700;
+
+
+
+// Mobile fonts
+$font-size-base: rem-calc(15px);
+$heading-1: (40px, 40px, $font-weight-bold) !default;
+$heading-1-alternative: (32px, 32px, $font-weight-bold) !default;
+$heading-2: (32px, 32px, $font-weight-normal) !default;
+$heading-2-alternative: (24px, 32px, $font-weight-bold) !default;
+$heading-3: (24px, 24px, $font-weight-normal) !default;
+$heading-3-alternative: (20px, 24px, $font-weight-medium) !default;
+$heading-4: (20px, 20px, $font-weight-normal) !default;
+$heading-4-alternative: (16px, 24px, $font-weight-normal) !default;
+$heading-5: (17px, 17px, $font-weight-normal) !default;
+$heading-5-alternative: (16px, 24px, $font-weight-bold) !default;
+$heading-6: (14px, 32px, $font-weight-bold) !default;
+
+// Desktop fonts
+$font-desktop-base: rem-calc(18px);
+$heading-desktop-1: (60px, 64px, $font-weight-bold) !default;
+$heading-desktop-1-alternative: (48px, 40px, $font-weight-bold) !default;
+$heading-desktop-2: (48px, 48px, $font-weight-normal) !default;
+$heading-desktop-2-alternative: (40px, 48px, $font-weight-bold) !default;
+$heading-desktop-3: (32px, 40px, $font-weight-normal) !default;
+$heading-desktop-3-alternative: (24px, 32px, $font-weight-normal) !default;
+$heading-desktop-4: (28px, 40px, $font-weight-normal) !default;
+$heading-desktop-4-alternative: (24px, 32px, $font-weight-normal) !default;
+$heading-desktop-5: (22px, 32px, $font-weight-normal) !default;
+$heading-desktop-5-alternative: (20px, 32px, $font-weight-bold) !default;
+
+// Navigation font size
+$font-size-nav: (24px, 32px, $font-weight-bold) !default;
+
+// Body fonts
+$font-size-body-1: (16px, 24px, $font-weight-normal) !default;
+
+$font-size-body-2: (14px, 20px, $font-weight-normal) !default;
+
+// Caption text font
+$font-size-caption: (14px, 16px, $font-weight-normal) !default;
+$font-text-caption: (16px, 24px, $font-weight-bold) !default;
+
+// Tiny Caption font
+$font-size-tiny-caption: (12px, 16px, $font-weight-normal) !default;
+$font-caption-secondary: (14px, 32px, $font-weight-bold) !default;
+$font-caption-sm: (10px, 32px, $font-weight-bold) !default;
+
+// Label caption text
+$font-label: (17px, 17px, $font-weight-normal)!default;
+$font-near-text: (12px, 24px, $font-weight-normal)!default;
+
+// Button fonts
+$font-size-button-lg: (20px, 20px, $font-weight-normal) !default;
+$font-size-button-md: (17px, 17px, $font-weight-normal) !default;
+$font-size-button-sm: (14px, 17px, $font-weight-normal) !default;
+
+// Form input fonts
+$font-size-form: (14px, 24px, $font-weight-normal) !default;
+
+// Other component fonts
+$font-size-other-md: (14px, 24px, $font-weight-bold) !default;
+$font-size-other-sm: (12px, 24px, $font-weight-normal) !default;
+
+// Badge font numbers
+$font-size-badge: (12px, 16px, $font-weight-bold) !default;
+
+// Icons font size
+$font-icon-xs: rem-calc(12px);
+$font-icon-sm: rem-calc(16px);
+$font-icon-md: rem-calc(24px);
+$font-icon-lg: rem-calc(32px);
+
+// -----------COLORS VARIABLES-------------------------------------- 
+
+// Background color for <body>
+$body-base-color: #ffffff;
+
+// Global text color on <body>
+$text-base-color: #1F2D3D;
+
+// Primary yellow color
+$primary-color: #F6B70F;
+
+// Primary colors for later use
+$primary-color-dark-1: #050504;
+$primary-color-dark-2: #3C4858;
+
+$primary-color-light-1:  #8492A6;
+$primary-color-light-2: #C2CEDB;
+$primary-color-light-3: #D3DCE6;
+$primary-color-light-4: #E5E9F2;
+$primary-color-light-5: #EFF2F7;
+$primary-color-light-6: #F9FAFC;
+
+
+// -----------CONTAINER WIDTH VARIABLE---------------------------------
+
+$container-width: rem-calc(1140px);
+
+
+// -----------MAIN CONTAINER WRAPPER VARIABLE---------------------------
+
+// Desktop wrapp
+$wrapper-desktop: rem-calc(100px) 0;
+
+// Mobile wrapp
+$wrapper-mobile: rem-calc(40px) 0;
+
+
+// -----------BUTTON WRAPPER VARIABLES----------------------------------
+
+// Standard buttons 
+$btn-lg-wrap: rem-calc(12px) 0;
+$btn-md-wrap: rem-calc(5.5px) rem-calc(13.4px);
+$btn-sm-wrap: rem-calc(2px) 0;
+
+$btn-icon24-wrap: rem-calc(10px) 0;
+$btn-icon20-wrap: rem-calc(5px) 0;
+
+// Other buttons (Something like loading circle or jumping dots)
+$btn-other-md-wrap: 0 rem-calc(32px);
+
+// Float buttons (Hamburger, cross X, or smaller button with two dash)
+$btn-float-lg-wrap: rem-calc(14px);
+$btn-float-md-wrap: rem-calc(12px);
+$btn-float-sm-wrap: rem-calc(8px);
+
+
+// -----------FORM WRAPPER VARIABLES------------------------------------
+
+$input-wrap: rem-calc(11px) rem-calc(16px);
+$textarea-wrap: rem-calc(11px) rem-calc(16px);
+$dropdown-wrap: rem-calc(12px) rem-calc(16px);
+$dropdown-select-wrap: rem-calc(14.5px) rem-calc(16px);
+
+
+// -----------MARGIN GUTTER VARIABLES-----------------------------------
+
+// Gutter space between Input and Title
+$margin-sm: rem-calc(8px);
+
+// Gutter space between Input and Checkbox
+$margin-md: rem-calc(12px);
+
+// Gutter space between Title and Text paragraph
+$margin-lg: rem-calc(16px);
+
+// Gutter space between components and certain small title
+$margin-xl: rem-calc(24px);
+
+// Gutter space between button links
+$margin-lgx2: rem-calc(32px);
+
+
+// -----------COLORED CIRCLE VARIABLES----------------------------------
+
+$colors-list: $primary-color-dark-1
+                $text-base-color
+                $primary-color-dark-2
+                $primary-color-light-1
+                $primary-color-light-2
+                $primary-color-light-3
+                $primary-color-light-4
+                $primary-color-light-5
+                $primary-color-light-6; 
+$circle-size: rem-calc(120px);
+
+
+// -----------VARIABLES FOR ICONS--------------------------------------
+
+$icon-font-sm: rem-calc(16px);
+$icon-font-md: rem-calc(20px);
+$icon-font-lg: rem-calc(24px);
+$icon-font-extra-lg: rem-calc(32px);
+
+
+// -----------VARIABLES FOR CSS GRID------------------------------------
+
+// desktop grid
+$grid-desktop-columns: 12;
+$grid-desktop-sideMargin: 80px;
+$grid-desktop-gutter: 40px;
+$grid-desktop-breakpoint: 1400px;
+
+// tablet grid
+$grid-tablet-columns: 12;
+$grid-tablet-sideMargin: 60px;
+$grid-tablet-gutter: 30px;
+$grid-tablet-breakpoint: 1020px;
+
+// mobile grid
+$grid-mobile-columns: 4;
+$grid-mobile-sideMargin: 32px;
+$grid-mobile-gutter: 20px;
+$grid-mobile-breakpoint: 620px;
+
+// pixels to % variables
+$desk-grid-width: 100% - (($grid-desktop-sideMargin * 2 / $grid-desktop-breakpoint) * 100%);
+ 
+$tab-grid-width: 100% - (($grid-tablet-sideMargin * 2 / $grid-tablet-breakpoint) * 100%);
+  
+$mob-grid-width: 100% - (($grid-mobile-sideMargin * 2 / $grid-mobile-breakpoint) * 100%);
+  
+
+$desk-gutter: (($grid-desktop-gutter / ($grid-desktop-breakpoint - ($grid-desktop-sideMargin * 2))) * 100%);
+
+$tab-gutter: (($grid-tablet-gutter / ($grid-tablet-breakpoint - ($grid-tablet-sideMargin * 2))) * 100%);
+  
+$mob-gutter: (($grid-mobile-gutter / ($grid-mobile-breakpoint - ($grid-mobile-sideMargin * 2))) * 100%);
+  
+      
+// -----------VARIABLES FOR COMPONENTS LIKE - radio,checkbox.switches,toggles---------------------------
+
+$primary: $text-base-color;
+$secondary: $body-base-color;
+$disable: $primary-color-light-5;
+$fontSize: 21px;
+$lineHeight: 1.5rem;
+
+
+// -----------VARIABLES FOR TAB BAR COMPONENT---------------------------
+$p: 12px;
+$n: 4;
+$white: $body-base-color;
+$blue: $text-base-color;

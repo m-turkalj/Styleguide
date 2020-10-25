@@ -1,0 +1,27 @@
+.line {
+    border-bottom: 1px solid $primary-color-light-2;
+
+    &-md {
+        width: rem-calc(80px); 
+        margin: $margin-sm 0 $margin-lg 0;
+    }
+
+    &-full {
+        margin-top: $margin-xl;
+        width: 100%;
+    }
+}
+
+.vertical {
+    border-left: 2px solid $primary-color-light-2;
+    height: rem-calc(16px);
+    position: relative;
+
+    &-sm {
+        height: rem-calc(8px);
+    }
+
+    &-md {
+        height: rem-calc(12px);
+    }
+}

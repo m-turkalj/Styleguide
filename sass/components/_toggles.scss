@@ -1,0 +1,120 @@
+@mixin formToggles($fontSize:16px, $lineHeight: 1.5rem, $border:2, $bg: $primary-color-light-3, $fg: $body-base-color, $disable: $primary-color-light-5) {
+    // strip the units (expecting a px value, but remove so we've just got an int)
+    $baseFont: ($fontSize) / ($fontSize * 0 + 1);
+    // ensure our base is a rem val
+    $base: ($lineHeight) / ($lineHeight * 0 + 1) * 1rem;
+    // get our borderwidth in rems
+    $borderWidth: (($border) / ($border * 0 + 1) / $baseFont) * 1rem;
+    .toggles {
+        label {
+            position: relative;
+            display: inline-block;
+            pointer-events: none;
+            padding-left: $base;
+            margin-bottom: 0;
+            &:before,
+            &:after {
+                box-sizing: border-box;
+                content: ' ';
+                display: block;
+                position: absolute;
+                top: $base/4.1;
+                left: 0;
+                width: $base/2;
+                height: $base/2;
+                border-radius: 100%;
+                pointer-events: auto;
+                cursor: pointer;
+            }
+            &:before {
+                width: ($base/2)+$borderWidth*3.5;
+                height: ($base/2)+$borderWidth*3.5;
+                margin: -$borderWidth*1.75;
+                transition: background .36s;
+            }
+            // Radio's setup
+            &:after {
+                border: 4px solid $bg;
+                transform: scale(0);
+                transition: background .12s, transform .16s;
+            }
+            // The radio button background
+            &:before {
+                border: 1px solid $primary-color-light-3;
+            }
+         
+            // Create an alternative stlye for switches
+            &.switch {
+                padding-left: $base * 2.5;
+                display: block;
+                &:before {
+                    width: ($base)+$borderWidth*10.5;
+                    height: ($base/2)+$borderWidth*5.25;
+                    border: $borderWidth solid $disable;
+                }
+                &:after {
+                    transform: scale(1);
+                    background: $disable;
+                }
+                &.round:before {
+                    border-radius: rem-calc(24px);
+                    background-color: $primary-color-light-5;
+                }
+                &.round:after {
+                    border-radius: 100%;
+                    border: 8px solid $fg;
+                }
+            }
+        }
+        // Hide the input elements and use there psuedo elements
+        input[type="radio"] {
+            display: none;
+            &:checked + label:after {
+                transform: scale(1.5);
+                background: $fg;
+            }
+        }
+        // Hide the input element
+        input[type="checkbox"] {
+            display: none;
+            // style active state psuedo element
+            &:checked + label:after {
+                content: '';
+                display: inline-block;
+                background: $bg;
+                color: #fff;
+                line-height: $base/2+$borderWidth;
+                font-size: $base/3;
+                text-align: center;
+                transform: scale(1);
+                border: none;
+            }
+        }
+        // Switch active states
+        input[type="radio"],
+        input[type="checkbox"] {
+            // Add additional adjustments for switch style
+            &:checked + label.switch {
+                &:before {
+                    background-color: $bg;
+                    border: $borderWidth solid $bg;
+                }
+                &.material:before {
+                    background: lighten($primary, 4%);
+                }
+            }
+            &:checked + label.switch {
+                &:after {
+                    // no 3d, to support ie9+
+                    transform: translateX($base*1);
+                    border: 8px solid $fg;
+                    content: '';
+                }
+                &.material:after {
+                    background: $primary;
+                    border: none;
+                }
+            }
+        }
+    }       
+}

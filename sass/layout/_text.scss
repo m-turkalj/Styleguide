@@ -1,0 +1,41 @@
+.typography {
+
+    &__content {
+        margin-top: $margin-lgx2;
+        margin-bottom: rem-calc(40px);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &--weight-1 {
+            align-self: baseline;
+            margin-right: rem-calc(164px);
+        }
+
+        &--weight-2 {
+            align-self: baseline;
+            margin-right: rem-calc(100px);
+        }
+
+        &--size {
+            align-self: flex-end;
+            padding-right: rem-calc(40px);
+            margin-bottom: $margin-xl;
+        }
+    }
+
+    &__headline {
+        margin-bottom: $margin-lgx2;
+
+        &--title {
+            margin-bottom: $margin-sm;
+        }
+    }
+
+    &__title {
+        margin-bottom: $margin-xl;
+    }
+}
